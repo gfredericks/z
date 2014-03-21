@@ -34,9 +34,11 @@
   (imag [_] i)
   Object
   (toString [_]
-    (if (neg? i)
-      (str r "-" (- i) "i")
-      (str r "+" i "i")))
+    (cond
+     (zero? i) (str r)
+     (zero? r) (str (case i 1 "" -1 "-" i) "i")
+     (neg? i)  (str r "-" (if (= -1 i) "" (- i)) "i")
+     :else     (str r "+" (if (= 1 i) "" i) "i")))
   (hashCode [_] (.hashCode [r i]))
   (equals [_ o]
     (and (instance? RectComplex o)
