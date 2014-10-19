@@ -6,4 +6,4 @@
   :dependencies [[org.clojure/clojure "1.6.0-beta2"]
                  [com.gfredericks/lib-4395 "0.1.0"]]
   :profiles {:dev {:dependencies [[org.clojure/test.check "0.5.7"]]}}
-  :lein-release {:deploy-via :clojars})
+  :deploy-repositories [["releases" :clojars]])
