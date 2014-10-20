@@ -40,7 +40,15 @@
 
 (defn conjugate [z] (z/conjugate z))
 
+(defn magnitude [z] (z/mag z))
+
 (defn abs-squared
   "Returns the square of the absolute value of the argument."
   [z]
   (* z (z/conjugate z)))
+
+(defn separation
+  "Returns a double representing the absolute value of the difference
+  between the two given numbers."
+  [z1 z2]
+  (z/mag (- z1 z2)))
