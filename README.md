@@ -5,7 +5,7 @@ Clojure >= 1.6.
 
 ## Usage
 
-Leiningen: `[com.gfredericks/z "0.1.2"]`
+Leiningen: `[com.gfredericks/z "0.1.3"]`
 
 ``` clojure
 (ns my.things

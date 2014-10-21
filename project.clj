@@ -1,4 +1,4 @@
-(defproject com.gfredericks/z "0.1.3-SNAPSHOT"
+(defproject com.gfredericks/z "0.1.3"
   :description "Complex numbers in Clojure"
   :url "https://github.com/fredericksgary/z"
   :license {:name "Eclipse Public License"
