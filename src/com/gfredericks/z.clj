@@ -18,6 +18,10 @@
   [r i]
   (z/complex r i))
 
+(defn polar->z
+  [mag arg]
+  (com.gfredericks.z.impl.PolarComplex. mag arg))
+
 (def ZERO (real->z 0))
 (def ONE (real->z 1))
 (def I (imag->z 1))

@@ -12,11 +12,9 @@
   (let [double (gen/fmap double gen/ratio)
         double-double (gen/tuple double double)]
     (gen/one-of
-     [(gen/fmap (fn [[r i]]
-                  (com.gfredericks.z.impl.RectComplex. r i))
+     [(gen/fmap (fn [[r i]] (z/z r i))
                 double-double)
-      (gen/fmap (fn [[mag arg]]
-                  (com.gfredericks.z.impl.PolarComplex. mag arg))
+      (gen/fmap (fn [[mag arg]] (z/polar->z mag arg))
                 double-double)])))
 
 (defspec addition-associativity 10000
