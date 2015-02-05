@@ -3,9 +3,11 @@
 A simple implementation of complex numbers in Clojure. Requires
 Clojure >= 1.6.
 
-## Usage
+## Obtention
 
 Leiningen: `[com.gfredericks/z "0.1.3"]`
+
+## Usage
 
 ``` clojure
 (ns my.things
